@@ -1,0 +1,2265 @@
+@charset "utf-8";
+/*
+=======================================================================
+	General Rules
+=======================================================================
+*/
+* {
+	padding:0px;
+	margin:0px;
+}
+body {
+	background-image:url(../images/bg.gif);
+	background-repeat:repeat-x;
+	background-position:top;
+	background-color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+}
+a {
+	text-decoration:none;
+	outline:none;
+	color:#666666;
+}
+a img {
+	border:none;
+}
+.clear {
+	clear:both;
+}
+.bold {
+	font-weight:bold;
+}
+.colr {
+	color:#3b9fd5 !important;
+}
+.black {
+	color:#000;
+}
+h1 {
+	font-size:22px;
+	font-weight:normal;
+}
+h2 {
+	font-size:20px;
+	font-weight:normal;
+}
+h3 {
+	font-size:18px;
+	font-weight:normal;
+}
+h4 {
+	font-size:16px;
+	font-weight:normal;
+}
+.subhead {
+	margin-top:20px;
+	width:100%;
+	float:left;
+}
+h5 {
+	font-size:14px;
+	font-weight:normal;
+	color:#3b9fd5;
+}
+h6 {
+	font-size:12px;
+	font-weight:normal;
+	color:#3b9fd5;
+}
+p {
+	line-height:18px;
+}
+.left {
+	float:left !important;
+}
+.right {
+	float:right !important;
+}
+.heading {
+	padding:10px 0px 8px 0px;
+	width:100%;
+	border-bottom:#dddddd solid 1px;
+	margin-bottom:10px;
+	color:#3b9fd5;
+}
+/*
+=======================================================================
+	Buttons
+=======================================================================
+*/
+a.addtocart {
+	background-image:url(../images/btn_bg.gif);
+	background-repeat:repeat-x;
+	height:19px;
+	display:inline-block;
+	border:#999999 solid 1px;
+	padding:0px 0px 0px 5px;
+}
+a.addtocart span{
+	background-image:url(../images/cart.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	height:17px;
+	display:inline-block;
+	padding:2px 10px 0px 20px;
+}
+.addtocart:hover {
+	color:#000;
+}
+a.simplebtn {
+	height:27px;
+	display:inline-block;
+	color:#FFF;
+	background-image:url(../images/btn_green.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	padding:0px 0px 0px 10px;
+}
+a.simplebtn span{
+	height:22px;
+	display:inline-block;
+	color:#FFF;
+	background-image:url(../images/btn_green.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	padding:5px 10px 0px 0px;
+	font-weight:bold;
+}
+a.simplebtn:hover {
+	color:#fff;
+}
+a.simplebtndrk {
+	height:27px;
+	display:inline-block;
+	color:#FFF;
+	background-image:url(../images/btn_greendrk.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	padding:0px 0px 0px 10px;
+}
+a.simplebtndrk span{
+	height:22px;
+	display:inline-block;
+	color:#FFF;
+	background-image:url(../images/btn_greendrk.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	padding:5px 10px 0px 0px;
+	font-weight:bold;
+}
+a.simplebtndrk:hover {
+	color:#fff;
+}
+button.simplebtn {
+	height:27px;
+	display:inline-block;
+	color:#FFF;
+	background-image:url(../images/btn_green.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	padding:0px 0px 0px 10px;
+	background-color:transparent;
+}
+button.simplebtn span{
+	height:22px;
+	display:inline-block;
+	color:#FFF;
+	background-image:url(../images/btn_green.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	padding:5px 10px 0px 0px;
+	font-weight:bold;
+}
+button.simplebtn:hover {
+	color:#fff;
+}
+.proceed {
+	padding:6px 15px 3px 15px;
+	background-image:url(../images/proceed.gif);
+	background-repeat:repeat-x;
+	background-color:#b2b2b2;
+	border:#a0a0a0 solid 1px;
+	color:#fff;
+	height:20px;
+	display:inline-block;
+	font-weight:bold;
+	margin:5px 0px;
+}
+.proceed:hover {
+	color:#666;
+	border:#999 solid 1px;
+}
+.cartmarg {
+	margin-top:8px;
+	margin-right:5px;
+}
+/*
+=======================================================================
+	Wrapper Section Rules
+=======================================================================
+*/
+#wrapper_sec {
+	width:940px;
+	min-height:500px;
+	margin:0px auto;
+}
+
+/*
+=======================================================================
+	Top Navigation Rules
+=======================================================================
+*/
+#top_navi {
+	width:940px;
+	float:left;
+	padding:4px 0px;
+}
+#top_navi ul.links{
+	float:left;
+	list-style:none;
+}
+#top_navi ul.links li{
+	float:left;
+	padding:0px 10px;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+#top_navi ul.links li.last{
+	background-image:none;
+}
+#top_navi ul.links li a{
+	color:#aaa;
+}
+#top_navi ul.links li a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+#top_navi p{
+	color:#aaa;
+}
+.right_head {
+	float:right;
+}
+.right_head p{
+	float:left;
+	padding-right:20px;
+}
+.right_head ul{
+	float:left;
+	list-style:none;
+}
+.right_head ul li{
+	float:left;
+}
+.right_head ul li.txt{
+	padding-top:1px;
+	color:#aaa;
+}
+.right_head ul li select{
+	float:left;
+	width:100px;
+	margin:0px 0px 0px 10px;
+}
+/*
+=======================================================================
+	Logo Section Rules
+=======================================================================
+*/
+#logo {
+	width:940px;
+	float:left;
+	padding:0px 0px;
+	height:84px;
+}
+#logo a{
+	float:left;
+	margin-top:20px;
+}
+/*
+=======================================================================
+	Search Rules
+=======================================================================
+*/
+#search {
+	float:right;
+	padding-top:4px;
+}
+#search ul{
+	float:left;
+	list-style:none
+}
+#search ul li{
+	float:left;
+}
+#search ul li input.bar{
+	width:193px;
+	height:26px;
+	padding:3px 5px 0px 5px;
+	border:transparent solid 1px;
+	background-image:url(../images/search.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	border:none;
+	float:left;
+}
+#search ul li input.go{
+	margin:0px 5px;
+	cursor:pointer;
+}
+/*
+=======================================================================
+	Banner Rules
+=======================================================================
+*/
+#Banner {
+	float:left;
+}
+/*
+=======================================================================
+	Bread Crumb Rules
+=======================================================================
+*/
+#crumb {
+	width:928px;
+	float:left;
+	padding:7px 10px 0px 0px;
+	height:25px;
+	border:#bababa solid 1px;
+	background-image:url(../images/crumb.gif);
+	background-repeat:repeat-x;
+	margin:10px 0px;
+}
+ul.breadcrumb {
+	float:left;
+	list-style:none;
+	color:#666;
+}
+ul.breadcrumb li{
+	float:left;
+	padding:0px 10px;
+	background-image:url(../images/sep1.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+ul.breadcrumb li.last{
+	background-image:none;
+}
+ul.breadcrumb li a{
+	color:#3b9fd5;
+}
+ul.breadcrumb li a:hover{
+	color:#666;
+	text-decoration:underline;
+}
+
+ul.network {
+	float:right;
+	list-style:none;
+	color:#666;
+}
+ul.network li{
+	float:left;
+	padding:0px 5px;
+}
+ul.network li.last{
+	background-image:none;
+}
+ul.network li a{
+	color:#3b9fd5;
+}
+ul.network li a:hover{
+	color:#666;
+	text-decoration:underline;
+}
+/*
+=======================================================================
+	Content Section Rules
+=======================================================================
+*/
+#content_sec {
+	width:940px;
+	background-color:#FFF;
+}
+/*
+=======================================================================
+	Column 1 Rules
+=======================================================================
+*/
+.col1 {
+	width:220px;
+	float:left;
+	margin:0px 0px 0px 0px;
+}
+.col1 .small_heading{
+	width:220px;
+	float:left;
+	padding:0px 0px 17px 0px;
+}
+.col1 a.bigbtn {
+	height:21px;
+	width:200px;
+	padding-top:6px;
+	font-size:12px;
+	color:#777777;
+	background-image:url(../images/bigbtn.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-align:center;
+	display:inline-block;
+	float:left;
+	margin:10px 0px;
+}
+/*
+=======================================================================
+	Categories Rules
+=======================================================================
+*/
+.category {
+	width:220px;
+	padding:0px 0px 10px 0px;
+	float:left;
+	min-height:100px;
+	background-image:url(../images/left_heading.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	margin-bottom:10px;
+}
+.category h5{
+	float:left;
+	padding:7px 10px 5px 10px;
+	color:#666666;
+}
+
+.arrowlistmenu{
+	width: 210px;
+	float:left;
+	padding-left:5px;
+}
+
+.arrowlistmenu .menuheader{
+	color: #666666;
+	background-image:url(../images/cat_bg_left.gif);
+	background-repeat:no-repeat;
+	cursor:pointer;
+	width:209px;
+	height:18px;
+	padding:7px 0px 0px 0px;
+	margin-left:1px;
+	border-bottom:#cdcdcd solid 1px;
+	display:inline-block;
+}
+
+.arrowlistmenu .openheader{
+	background-image:url(../images/cat_bg_sel.gif);
+	background-repeat:no-repeat;
+}
+
+.arrowlistmenu ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.arrowlistmenu ul li ul li a{
+	color: #666666;
+	background-image:none !important;
+	background-color:#fefefe;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	width:194px;
+	height:18px;
+	padding:7px 0px 0px 15px;
+	margin-left:1px;
+	border-bottom:#cdcdcd solid 1px;
+	display:inline-block;
+}
+.arrowlistmenu ul li a{
+	color: #666666;
+}
+
+.arrowlistmenu ul li .opensubheader{
+	background-image:url(../images/cat_bg_lev2_link.gif);
+	background-repeat:no-repeat;
+}
+
+.arrowlistmenu ul li .closedsubheader{
+	background-image:url(../images/cat_bg_lev2_link_rol.gif);
+	background-repeat:no-repeat;
+}
+
+.arrowlistmenu ul li a{
+	color:#666666;
+	background-image:url(../images/cat_bg_lev2.gif);
+	background-repeat:no-repeat;
+	cursor:pointer;
+	width:194px;
+	height:18px;
+	padding:7px 0px 0px 15px;
+	margin-left:1px;
+	border-bottom:#cdcdcd solid 1px;
+	display:inline-block;
+}
+
+.arrowlistmenu ul li a:visited{
+color: #666;
+}
+
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+background-color: #ececec;
+}
+
+.arrowlistmenu ul li a.subexpandable:hover{ /*hover state CSS for sub menu header*/
+	
+}
+/*
+=======================================================================
+	My Account Rules
+=======================================================================
+*/
+.myaccount {
+	width:200px;
+	padding:0px 10px 10px 10px;
+	float:left;
+	min-height:100px;
+	background-image:url(../images/left_heading.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	margin-bottom:10px;
+}
+.myaccount h5{
+	float:left;
+	padding:7px 0px 5px 0px;
+	color:#666;
+}
+.myaccount ul{
+	width:200px;
+	float:left;
+	padding:7px 0px;
+	list-style:none;
+}
+.myaccount ul li{
+	width:185px;
+	padding:7px 0px 7px 15px;
+	border-bottom:#e1e1e1 solid 1px;
+	background-image:url(../images/crumb_sep.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+}
+.myaccount ul li a{
+	color:#666;
+}
+.myaccount ul li a:hover{
+	font-weight:bold;
+}
+.myaccount ul li a.selected{
+	font-weight:bold;
+}
+/*
+=======================================================================
+	My Cart Rules
+=======================================================================
+*/
+.mycart {
+	width:200px;
+	padding:0px 10px 10px 10px;
+	float:left;
+	min-height:100px;
+	background-image:url(../images/left_heading.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	margin-bottom:10px;
+}
+.mycart h5{
+	float:left;
+	padding:7px 10px 5px 0px;
+	color:#666666;
+}
+.mycart .right{
+	padding-top:7px;
+}
+.mycart .left{
+	padding-top:7px;
+}
+.mycart .veiwitems{
+	padding:15px 0px 5px 0px;
+	width:200px;
+	border-bottom:#e4e4e4 solid 1px;
+	display:inline-block;
+}
+.mycart .veiwitems a{
+	text-decoration:underline;
+}
+.mycart .right a{
+	text-decoration:underline;
+}
+.mycart ul{
+	float:left;
+	list-style:none;
+	margin-bottom:10px;
+}
+.mycart ul li{
+	float:left;
+	width:200px;
+	border-bottom:#e3e3e3 dotted 1px;
+}
+.mycart p.title{
+	width:180px;
+}
+.mycart .grey{
+	float:left;
+	padding:1px 10px 5px 10px;
+	background-color:#fafafa;
+	width:180px;
+	margin:10px 0px 2px 0px;
+}
+/*
+=======================================================================
+	Compare Products Rules
+=======================================================================
+*/
+.compareproducts {
+	width:200px;
+	padding:0px 10px 10px 10px;
+	float:left;
+	min-height:100px;
+	background-image:url(../images/left_heading.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	margin-bottom:10px;
+}
+.compareproducts h5{
+	float:left;
+	padding:7px 0px 5px 0px;
+	color:#666;
+}
+
+.compareproducts ul{
+	float:left;
+	list-style:none;
+	padding-bottom:10px;
+}
+.compareproducts ul li{
+	float:left;
+	width:200px;
+	border-bottom:#e3e3e3 dotted 1px;
+	padding:5px 0px;
+}
+.compareproducts ul li .title{
+	width:180px;
+}
+.compareproducts ul li .right{
+	padding-top:3px;
+}
+/*
+=======================================================================
+	Community Poll Rules
+=======================================================================
+*/
+.poll {
+	width:200px;
+	padding:0px 10px 10px 10px;
+	float:left;
+	min-height:100px;
+	background-image:url(../images/left_heading.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	margin-bottom:10px;
+}
+.poll h5{
+	float:left;
+	padding:7px 0px 5px 0px;
+	color:#666;
+}
+.poll p{
+	float:left;
+	padding:7px 0px;
+}
+.poll ul{
+	width:200px;
+	float:left;
+	padding:15px 0px;
+	border-top:#d8d8d8 solid 1px;
+	border-bottom:#d8d8d8 solid 1px;
+	list-style:none;
+	margin-bottom:10px;
+}
+.poll ul li{
+	width:160px;
+	float:left;
+	padding:4px 10px;
+}
+.poll ul li input{
+	float:left;
+	margin-right:10px;
+}
+.poll a.vote{
+	float:left;
+	padding:3px 10px;
+	background-color:#156603;
+	color:#FFF;
+	margin:10px 0px 0px 10px;
+}
+.poll a.vote:hover{
+	background-color:#000;
+	color:#FFF;
+}
+/*
+=======================================================================
+	Shop Now Rules
+=======================================================================
+*/
+.shopby {
+	width:200px;
+	padding:0px 10px 10px 10px;
+	float:left;
+	min-height:100px;
+	background-image:url(../images/left_heading.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	margin-bottom:10px;
+}
+.shopby h5{
+	float:left;
+	padding:7px 10px 5px 0px;
+	color:#666;
+}
+.shopby h6.head{
+	width:180px;
+	float:left;
+	padding:7px 10px 0px 10px;
+	background-color:#747474;
+	color:#FFF;
+}
+.shopby h6.options{
+	width:200px;
+	float:left;
+	padding:7px 0px 3px 0px;
+	color:#3b9fd5;
+	border-bottom:#3b9fd5 solid 1px;
+}
+.shopby ul{
+	width:200px;
+	float:left;
+	list-style:none;
+	padding:7px 0px;
+}
+.shopby ul li{
+	width:200px;
+	float:left;
+	list-style:none;
+	padding:7px 0px;
+	border-bottom:#9a9a9a dotted 1px;
+}
+.shopby ul li a{
+	color:#9a9a9a;
+}
+/*
+=======================================================================
+	Tags Rules
+=======================================================================
+*/
+.tags {
+	width:200px;
+	padding:0px 10px 10px 10px;
+	float:left;
+	min-height:100px;
+	background-image:url(../images/left_heading.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	margin-bottom:10px;
+}
+.tags h5{
+	float:left;
+	padding:7px 10px 5px 0px;
+	color:#666;
+}
+.tags ul{
+	width:180px;
+	float:left;
+	min-height:100px;
+	padding:20px 0px;
+	list-style:none;
+}
+.tags ul li{
+	padding:0px 5px;
+	float:left;
+}
+.tags ul li a{
+	float:left;
+}
+.tags ul li a.twelv{
+	font-size:12px;
+}
+.tags ul li a.ten{
+	font-size:10px;
+}
+.tags ul li a.sixteen{
+	font-size:16px;
+}
+.tags ul li a.fourteen{
+	font-size:14px;
+}
+.tags ul li a.eightn{
+	font-size:18px;
+}
+/*
+=======================================================================
+	newsletter Rules
+=======================================================================
+*/
+.newsletter {
+	width:200px;
+	padding:0px 10px 10px 10px;
+	float:left;
+	min-height:100px;
+	background-image:url(../images/left_heading.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	margin-bottom:10px;
+}
+.newsletter h5{
+	float:left;
+	padding:7px 10px 5px 0px;
+	color:#666;
+}
+.newsletter p{
+	width:200px;
+	float:left;
+	padding:7px 0px;
+}
+.newsletter ul{
+	width:200px;
+	float:left;
+	padding:7px 0px 15px 0px;
+	list-style:none;
+}
+.newsletter ul li input.bar{
+	background-color:#FFF;
+	border:#cfcfcf solid 1px;
+	width:195px;
+	height:23px;
+	background-image:url(../images/inputbar.gif);
+	background-repeat:repeat-x;
+	margin-bottom:6px;
+}
+.newsletter ul li input.subs{
+
+}
+/*
+=======================================================================
+	Column 2 Rules
+=======================================================================
+*/
+.col2 {
+	width:700px;
+	float:right;
+}
+/*
+=======================================================================
+	Scrolling Products Rules
+=======================================================================
+*/
+.scroll_prod {
+	width:698px;
+	float:left;
+	border:#d0d0d0 1px solid;
+	background-image:url(../images/scroll_bg.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	margin-bottom:10px;
+}
+.scroll_prod h2{
+	width:688px;
+	float:left;
+	border-bottom:#d0d0d0 1px solid;
+	height:35px;
+	background-image:url(../images/scroll_heading_bg.gif);
+	background-repeat:repeat-x;
+	padding:10px 0px 0px 10px;
+}
+.scroll_prod a.prev{
+	width:9px;
+	height:9px;
+	background-image:url(../images/arows.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	display:inline-block;
+	float:left;
+	margin:80px 10px 0px 10px;
+}
+.scroll_prod a.next{
+	width:9px;
+	height:9px;
+	background-image:url(../images/arows.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+	float:left;
+	margin:80px 0px 0px 0px;
+}
+.scroll_prod .anyClass{
+	float:left;
+	width:650px;
+	padding:30px 0px;
+	height:130px;
+	overflow:hidden;
+}
+
+.anyClass ul{
+	float:left;
+	width:650px;
+	list-style:none;
+	height:150px !important;
+}
+.anyClass ul li{
+	float:left;
+	width:116px;
+	margin-right:14px;
+	height:150px !important;
+}
+.anyClass ul li a{
+	font-size:12px;
+}
+.anyClass ul li a:hover{
+	color:#3b9fd5;
+	font-weight:bold;
+}
+.anyClass ul li a img{
+	border:#ccc 3px solid;
+	margin-bottom:3px;
+}
+.anyClass ul li a img:hover{
+	border:#3b9fd5 3px solid;
+}
+
+/*
+=======================================================================
+	Listing Rules
+=======================================================================
+*/
+.listings {
+	float:left;
+	width:720px;
+}
+.listings ul{
+	float:left;
+	list-style:none;
+}
+.listings ul li{
+	float:left;
+	width:160px;
+	height:225px;
+	background-image:url(../images/prod_listing_bg.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	margin:0px 20px 20px 0px;
+}
+.listings ul li.last{
+	margin-right:0px;
+}
+.listings ul li:hover{
+	background-image:url(../images/prod_listing_bg_rol.gif);
+	color:#FFF;
+}
+.listings ul li:hover  a.thumb{
+	border:#3b9fd5 3px solid;
+}
+.listings ul li:hover a.title, .listings ul li:hover a.addwish{
+	color:#FFF !important;
+}
+.listings ul li a.thumb{
+	float:left;
+	width:154px;
+	height:129px;
+	border:#ededed 3px solid;
+}
+.listings ul li a.title{
+	float:left;
+	padding:2px 5px 5px 5px;
+	width:144px;
+	height:14px;
+}
+.listings ul li a.addwish{
+	background-image:url(../images/add.gif);
+	background-repeat:repeat-x;
+	background-position:left;
+	background-repeat:no-repeat;
+	padding:2px 5px 2px 15px;
+	float:left;
+	margin-left:5px;
+	width:130px;
+	height:14px;
+	display:inline-block;
+}
+.listings ul li p.price{
+	padding:8px 0px 2px 5px;
+}
+/*
+=======================================================================
+	Footer Rules
+=======================================================================
+*/
+#footer {
+	width:100%;
+	background-image:url(../images/footer.gif);
+	background-repeat:repeat-x;
+	background-color:#2a2a2a;
+	margin-top:10px;
+}
+.inner_footer {
+	width:940px;
+	margin:0px auto;
+	background-image:url(../images/footer_bg.gif);
+	background-repeat:no-repeat;
+	background-position:top center;
+	padding:30px 0px 30px 0px;
+}
+.inner_footer h4.foot_head{
+	width:100%;
+	color:#FFF;
+	padding:0px 0px 10px 0px;
+}
+/*
+=======================================================================
+	About Store Section Rules
+=======================================================================
+*/
+.aboutstore {
+	float:left;
+	width:180px;
+}
+.aboutstore ul{
+	float:left;
+	list-style:none;
+}
+.aboutstore ul li{
+	padding:3px 0px;
+}
+.aboutstore ul li a{
+	color:#888888;
+}
+.aboutstore ul li a:hover{
+	color:#bababa;
+	text-decoration:underline;
+}
+/*
+=======================================================================
+	Customer Care Section Rules
+=======================================================================
+*/
+.cus_care {
+	float:left;
+	width:180px;
+}
+.cus_care ul{
+	float:left;
+	list-style:none;
+}
+.cus_care ul li{
+	padding:3px 0px;
+}
+.cus_care ul li a{
+	color:#888888;
+}
+.cus_care ul li a:hover{
+	color:#bababa;
+	text-decoration:underline;
+}
+/*
+=======================================================================
+	Community Section Rules
+=======================================================================
+*/
+.community {
+	float:left;
+	width:180px;
+}
+.community ul{
+	float:left;
+	list-style:none;
+}
+.community ul li{
+	padding:3px 0px;
+}
+.community ul li a{
+	color:#888888;
+}
+.community ul li a:hover{
+	color:#bababa;
+	text-decoration:underline;
+}
+/*
+=======================================================================
+	Support Section Rules
+=======================================================================
+*/
+.support {
+	float:left;
+	width:180px;
+}
+.support ul{
+	float:left;
+	list-style:none;
+}
+.support ul li{
+	padding:3px 0px;
+}
+.support ul li a{
+	color:#888888;
+}
+.support ul li a:hover{
+	color:#bababa;
+	text-decoration:underline;
+}
+/*
+=======================================================================
+	Newsletter Signup Section Rules
+=======================================================================
+*/
+.newssign {
+	float:left;
+	width:220px;
+}
+.newssign ul{
+	float:left;
+	list-style:none;
+}
+.newssign ul li{
+	padding:3px 0px;
+	float:left;
+}
+.newssign ul li input.bbar{
+	width:208px;
+	height:22px;
+	padding:5px;
+	border:transparent solid 1px;
+	background-image:url(../images/bbar.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	border:none;
+	float:left;
+}
+.newssign ul li input.sbar{
+	width:132px;
+	height:22px;
+	padding:5px;
+	border:transparent solid 1px;
+	background-image:url(../images/sbar.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	border:none;
+	margin-right:9px;
+	float:left;
+}
+.newssign ul li button.darksimplebtn{
+	width:67px;
+	height:32px;
+	background-color:transparent;
+	background-image:url(../images/signup.gif);
+	background-repeat:no-repeat;
+	border:none;
+	font-size:0px;
+	cursor:pointer;
+	float:left;
+}
+
+/*
+=======================================================================
+	Copyright Section Rules
+=======================================================================
+*/
+.copyright {
+	width:940px;
+	background-image:url(../images/copyright.gif);
+	background-repeat:no-repeat;
+	background-position:top center;
+	padding:10px 0px;
+	margin-top:20px;
+}
+/*
+=======================================================================
+	Input Form Rules
+=======================================================================
+*/
+ul.forms {
+	float:left;
+	list-style:none;
+	padding:0px 20px 10px 20px;
+}
+ul.forms li{
+	float:left;
+}
+ul.forms li.txt{
+	float:left;
+	width:100px;
+	color:#000;
+	padding-top:3px;
+}
+.req {
+	color:#F00;
+}
+ul.forms li.inputfield{
+	float:left;
+}
+ul.forms li.inputfield input{
+	width:229px;
+	height:20px;
+	background-image:url(../images/inputbar.gif);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	border:#cccccc solid 1px;
+	padding:0px 5px;
+}
+ul.forms li.inputfield select{
+	width:241px;
+	height:20px;
+	background-image:url(../images/inputbar.gif);
+	background-repeat:repeat-x;
+	border:#cccccc solid 1px;
+}
+ul.forms li.textfield{
+	float:left;
+}
+ul.forms li.textfield textarea{
+	width:340px;
+	height:110px;
+	background-image:url(../images/inputbar.gif);
+	background-repeat:repeat-x;
+	border:#cccccc solid 1px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:5px;
+}
+ul.forms li.radiobtn{
+	float:left;
+}
+ul.forms li.radiobtn input{
+	margin:0px 10px;
+	float:left;
+}
+ul.forms li.radiobtn .labletxt{
+	margin:0px 20px 0px 0px;
+	float:left;
+}
+/*
+=======================================================================
+	column 3 Rules
+=======================================================================
+*/
+.col3 {
+	width:940px;
+}
+/*
+=======================================================================
+	Product Detail Page Rules
+=======================================================================
+*/
+.prod_detail {
+	width:686px;
+	float:left;
+}
+.prod_detail .big_thumb{
+	width:240px;
+	float:left;
+}
+.prod_detail .desc{
+	width:390px;
+	float:right;
+}
+.prod_detail .desc a.email{
+	font-weight:bold;
+	background-image:url(../images/email.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	padding-left:20px;
+}
+.margn {
+	padding:12px 0px 0px 0px;
+}
+.addtocartsec{
+	background-image:url(../images/addtocart_bg.gif);
+	background-repeat:repeat-x;
+	height:113px;
+	border:#d0d0d0 solid 1px;
+	width:388px;
+}
+.addtocartsec h5{
+	padding:12px 0px 10px 10px;
+}
+.addtocartsec ul.qt{
+	list-style:none;
+	float:left;
+	width:100%;
+	padding:10px 0px 0px 0px;
+}
+.addtocartsec ul.qt li{
+	float:left;
+	margin-right:10px;
+}
+.addtocartsec ul.qt li.qty{
+	width:30px;
+	padding-top:5px;
+	padding-left:20px;
+}
+.addtocartsec ul.qt li input.bar{
+	float:left;
+	width:45px;
+	height:21px;
+	background-color:#FFF;
+	border:#d0d0d0 solid 1px;
+	background-image:url(../images/inputbar.gif);
+	background-repeat:repeat-x;
+}
+.quickreview {
+	padding:00px 0px 10px 0px;
+	margin:0px 0px 10px 0px;
+}
+.qheading {
+	border-bottom:#dddddd solid 1px;
+	color:#2e7fc4;
+	font-weight:bold;
+	font-size:13px;
+	margin-bottom:10px;
+}
+.quickreview h5{
+	padding:0px 0px 0px 0px;
+	float:left;
+}
+.quickreview h4.price{
+	padding:10px 0px;
+}
+.quickreview p.avail{
+	padding:10px 0px 0px 0px;
+}
+.quickreview p{
+	padding:0px 0px 5px 0px;
+}
+.prod_desc {
+	padding:20px 0px;
+	float:left;
+	margin-top:20px;
+}
+.prod_desc h6.bar{
+	margin-bottom:10px;
+}
+
+.aditional_info {
+	width:700px;
+	background-image:url(../images/cont_bg.gif);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	float:left;
+}
+.aditional_info h6{
+	width:690px;
+	height:24px;
+	padding:10px 0px 0px 10px;
+	background-image:url(../images/top_curve_big.gif);
+	background-position:top;
+	background-repeat:no-repeat;
+}
+.aditional_info ul{
+	padding:10px;
+	float:left;
+	width:680px;
+	border-bottom:#CCC solid 1px;
+	list-style:none;
+}
+.aditional_info ul.last{
+	border:none
+}
+.aditional_info ul li{
+	float:left;
+}
+.aditional_info ul li.title{
+	float:left;
+	width:210px;
+}
+.aditional_info ul li.desc{
+	float:left;
+	width:470px;
+}
+.tags_big {
+	width:700px;
+	background-image:url(../images/cont_bg.gif);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	float:left;
+	margin-top:10px;
+}
+.tags_big p{
+	padding:10px 0px;
+	width:700px;
+}
+.tags_big ul{
+	float:left;
+	list-style:none;
+	padding:10px 0px;
+}
+.tags_big ul li{
+	float:left;
+	padding:0px 10px;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	margin-bottom:10px;
+}
+.tags_big ul li.last{
+	background:none;
+}
+.tags_big input.bar{
+	width:229px;
+	height:20px;
+	background-image:url(../images/inputbar.gif);
+	background-repeat:repeat-x;
+	background-color:#FFF;
+	border:#cccccc solid 1px;
+	padding:0px 5px;
+	margin-bottom:5px;
+}
+.tags_big input.simplebtn{
+	margin:0px 0px 10px 10px;
+}
+
+.cont_sec {
+	width:700px;
+}
+.cont_sec p{
+	width:700px;
+	padding:10px 0px;
+}
+.cont_sec h6{
+	width:690px;
+	padding:10px 0px 0px 10px;
+	background-image:url(../images/top_curve_big.gif);
+	background-position:top;
+	background-repeat:no-repeat;
+}
+ul.addicons {
+	float:left;
+	list-style:none;
+	width:100%;
+	padding:5px 0px 15px 10px;
+}
+ul.addicons li{
+	float:left;
+	margin-right:35px;
+	padding-left:20px;
+	background-image:url(../images/add.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+/*
+=======================================================================
+	Contact Page Rules
+=======================================================================
+*/
+.contact {
+	float:left;
+	width:700px;
+	margin-bottom:20px;
+}
+.mapsec {
+	width:336px;
+	float:left;
+}
+.mapsec h6{
+	padding-bottom:10px;
+	margin-top:10px;
+}
+.mapsec p{
+	width:300px;
+	float:left;
+}
+.map {
+	float:left;
+	margin-top:20px;
+}
+.map iframe{
+	border-bottom:#000 solid 1px;
+}
+.map a.enlarg{
+	font-weight:bold;
+	padding:5px 0px;
+	color:#333;
+	float:left;
+}
+.contact_form {
+	width:280px;
+	float:right;
+}
+.contact_form h6{
+	padding-bottom:10px;
+	margin-top:10px;
+}
+.contact_form ul{
+	float:left;
+	list-style:none;
+}
+.contact_form ul li{
+	margin-bottom:5px;
+}
+.contact_form input.bar{
+	width:269px;
+	height:24px;
+	padding:0px 5px;
+	background-image:url(../images/bar.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+	border:#dddddd solid 1px;
+	font-size:11px;
+}
+.contact_form textarea{
+	width:269px;
+	height:154px;
+	padding:5px;
+	background-image:url(../images/textarea.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+	border:#dddddd solid 1px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+.error {
+	color:#F00;
+}
+input.submit {
+	height:27px;
+	width:70px;
+	background-image:url(../images/submit.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	cursor:pointer;
+	font-size:0px;
+	border:none;
+}
+.seccess {
+	color:#090;
+}
+/*
+=======================================================================
+	Sorting Rules
+=======================================================================
+*/
+.sorting {
+	width:700px;
+	margin:7px 0px;
+	background-image:url(../images/gray_sort.gif);
+	background-repeat:repeat-x;
+	background-position:0px 25px;
+	float:left;
+}
+.sorting p{
+	padding-top:5px;
+}
+.sorting ul{
+	float:left;
+	list-style:none;
+}
+.sorting ul li{
+	float:left;
+	height:23px;
+	padding:4px 10px 0px 10px;
+}
+.sorting ul li.last{
+	border-right:none;
+}
+.sorting ul li.text{
+	height:21px;
+	padding:6px 10px 0px 10px;
+}
+/*
+=======================================================================
+	Shopping Cart Rules
+=======================================================================
+*/
+.shoppingcart {
+	width:940px;
+	float:left;
+}
+.shoppingcart ul.tablehead{
+	width:940px;
+	float:left;
+	background-image:url(../images/cart_bg.gif);
+	background-repeat:repeat-x;
+	list-style:none;
+	height:24px;
+	padding-top:5px;
+}
+.shoppingcart ul.tablehead li{
+	float:left;
+	padding:2px 0px 0px 0px;
+	font-weight:bold;
+	font-size:12px;
+	color:#3b9fd5;
+	background:none !important;
+	height:18px !important;
+}
+.shoppingcart ul li.remove{
+	width:34px;
+	text-align:center;
+	height:28px;
+	padding-left:10px;
+}
+.shoppingcart ul li.thumb{
+	width:84px;
+	text-align:center;
+	height:44px;
+	padding-top:4px !important;
+}
+.shoppingcart ul li.title{
+	width:568px;
+	padding-left:10px;
+	height:28px;
+}
+.shoppingcart ul li.price{
+	width:75px;
+	text-align:center;
+	height:28px;
+}
+.shoppingcart ul li.qty{
+	width:64px;
+	text-align:center;
+	height:48px;
+}
+.shoppingcart ul li.qty input{
+	width:25px;
+	height:25px;
+	background-color:#fafafa;
+	border:#d5d5d5 solid 1px;
+	text-align:center;
+	margin-top:12px;
+}
+.shoppingcart ul li.total{
+	width:75px;
+	text-align:center;
+}
+
+.shoppingcart ul.cartlist{
+	width:940px;
+	float:left;
+	list-style:none;
+	padding:0px 0px;
+	height:50px;
+	margin-top:5px;
+	border-bottom:#dbdbdb solid 1px;
+}
+.shoppingcart ul.cartlist li{
+	float:left;
+	padding-top:0px;
+}
+.shoppingcart ul.cartlist li.txt{
+	padding-top:20px;
+}
+.btns {
+	border-bottom:#d7d7d7 solid 1px;
+	width:100%;
+	padding:15px 0px;
+	float:left;
+}
+.btns ul{
+	list-style:none;
+}
+/*
+=======================================================================
+	Sections Rules
+=======================================================================
+*/
+.sections {
+	width:940px;
+	float:left;
+	padding:20px 0px;
+}
+.centersec {
+	float:left;
+	width:280px;
+	margin:0px 43px;
+}
+/*
+=======================================================================
+	Cart Items Rules
+=======================================================================
+*/
+.cartitems {
+	width:244px;
+	border:#dbdbdb solid 1px;
+	padding:10px;
+	float:left;
+	margin-bottom:10px;
+}
+.cartitems h6{
+	width:244px;
+	float:left;
+}
+.cartitems h6 span{
+	padding-bottom:5px;
+}
+.cartitems ul{
+	float:left;
+	list-style:none;
+}
+.cartitems ul li{
+	width:244px;
+	border-bottom:#dbdbdb solid 1px;
+	float:left;
+	padding:20px 0px;
+}
+.cartitems ul li .thumb{
+	float:left;
+	width:88px;
+	height:99px;
+	margin-right:5px;
+}
+.cartitems ul li .thumb img{
+	width:88px;
+	height:99px;
+}
+.cartitems ul li .desc{
+	float:left;
+	width:125px;
+}
+.cartitems ul li .desc a.title{
+	margin-bottom:5px;
+	width:125px;
+	float:left;
+}
+.cartitems ul li .desc p{
+	margin-bottom:5px;
+	width:125px;
+}
+/*
+=======================================================================
+	Discount Coupon Rules
+=======================================================================
+*/
+.discount {
+	width:258px;
+	border:#dbdbdb solid 1px;
+	padding:10px;
+	float:left;
+	margin-bottom:10px;
+}
+.discount h6{
+	width:258px;
+	float:left;
+}
+.discount h6 span{
+	padding-bottom:5px;
+}
+.discount p{
+	width:258px;
+	float:left;
+	padding-top:5px;
+}
+.discount ul{
+	width:258px;
+	float:left;
+	list-style:none;
+	margin-top:10px;
+}
+.discount ul li{
+	width:258px;
+	float:left;
+	padding-bottom:5px;
+}
+.discount ul li input.bar{
+	width:235px;
+	height:24px;
+	background-color:#FFF;
+	border:#a0a0a0 solid 1px;
+	float:left;
+}
+
+/*
+=======================================================================
+	Estimate Rules
+=======================================================================
+*/
+.estimate {
+	width:258px;
+	border:#dbdbdb solid 1px;
+	padding:10px;
+	float:left;
+	margin-bottom:10px;
+}
+.estimate h6{
+	width:258px;
+	float:left;
+}
+.estimate h6 span{
+	padding-bottom:5px;
+}
+.estimate p{
+	width:258px;
+	float:left;
+	padding-top:5px;
+}
+.estimate ul{
+	width:258px;
+	float:left;
+	list-style:none;
+	margin-top:10px;
+}
+.estimate ul li{
+	width:258px;
+	float:left;
+	padding-bottom:5px;
+}
+.estimate ul li input.bar{
+	width:235px;
+	height:24px;
+	background-color:#FFF;
+	border:#a0a0a0 solid 1px;
+	float:left;
+}
+.estimate ul li select.bar{
+	width:235px;
+	height:24px;
+	background-color:#FFF;
+	border:#a0a0a0 solid 1px;
+	float:left;
+}
+/*
+=======================================================================
+	Grand Total Rules
+=======================================================================
+*/
+.grand_total {
+	width:285px;
+	border:#dbdbdb solid 1px;
+	padding:10px;
+	float:left;
+	margin-bottom:10px;
+	text-align:center;
+}
+.grand_total h5{
+	font-weight:bold;
+}
+.grand_total ul.line{
+	border-bottom:#dadada solid 1px;
+	width:100%;
+	margin-bottom:10px;
+}
+.grand_total ul{
+	float:left;
+	list-style:none;
+	margin-bottom:5px;
+}
+.grand_total ul li{
+	float:left;
+	background:none  !important;
+}
+.grand_total ul li.title{
+	text-align:right;
+	width:100px !important;
+}
+.grand_total ul li.price{
+	text-align:right;
+	width:80px !important;
+}
+/*
+=======================================================================
+	Login Page Rules
+=======================================================================
+*/
+.login {
+	width:938px;
+	border:#bababa solid 1px;
+	background-image:url(../images/login.gif);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+/*
+=======================================================================
+	New Customer Section Rules
+=======================================================================
+*/
+.sections .inner {
+	height:210px;
+	background-image:url(../images/botm_acount_curve.gif);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	padding:10px;
+}
+.newcustmr {
+	width:420px;
+	float:right;
+	margin:50px 27px 80px 0px;
+}
+.newcustmr p{
+	width:424px;
+	padding:10px 0px;
+	float:left;
+}
+/*
+=======================================================================
+	Registered Customer Section Rules
+=======================================================================
+*/
+.registerdcustmr {
+	width:420px;
+	float:right;
+	margin:50px 27px 80px 0px;
+}
+.registerdcustmr h6{
+	width:430px;
+	padding:8px 0px 0px 10px;
+	height:23px;
+	float:left;
+	font-weight:bold;
+	background-image:url(../images/login_bg.gif);
+	background-repeat:repeat-x;
+	background-position:0px 0px;
+}
+.registerdcustmr p{
+	width:410px;
+	padding:10px;
+	float:left;
+}
+.registerdcustmr a.forgot{
+	margin:5px 0px 0px 10px;
+}
+/*
+=======================================================================
+	Acount Page Rules
+=======================================================================
+*/
+.account {
+	width:700px;
+	float:left;
+}
+.account_title {
+	width:700px;
+	float:left;
+}
+.account_title h6{
+	width:700px;
+	float:left;
+	padding:20px 0px 10px 0px;
+}
+.account_title p{
+	width:700px;
+	float:left;
+}
+ul.acount_navi {
+	width:100%;
+	float:left;
+	background-image:url(../images/gray_bg.gif) !important;
+	background-repeat:repeat-x;
+	background-position:top left;
+	list-style:none;
+	height:27px;
+}
+ul.acount_navi li{
+	float:left;
+	background-image:url(../images/gray_sep.gif);
+	background-repeat:no-repeat;
+	background-position:right top;
+}
+ul.acount_navi li a{
+	font-weight:bold;
+	color:#000;
+	padding:5px 10px;
+	height:14px;
+	display:inline-block;
+	border:transparent solid 1px;
+}
+ul.acount_navi li a.selected{
+	background-image:url(../images/account_rol.gif);
+	background-repeat:repeat-x;
+	border:#197db3 solid 1px;
+	color:#FFF;
+}
+ul.acount_navi li a:hover{
+	background-image:url(../images/account_rol.gif);
+	background-repeat:repeat-x;
+	border:#197db3 solid 1px;
+	color:#FFF;
+}
+
+.acount_info {
+	width:700px;
+	float:left;
+	padding:20px 0px;
+}
+h6.bar{
+	width:680px;
+	border:#e2e2e2 solid 1px;
+	background-image:url(../images/bar.gif);
+	background-repeat:repeat-x;
+	height:20px;
+	padding:10px 10px 0px 10px;
+	float:left;
+	margin-bottom:20px;
+}
+.small_sec {
+	width:342px;
+	min-height:132px;
+	margin-bottom:10px;
+	background-image:url(../images/section.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+}
+.small_sec .content{
+	min-height:80px;
+	padding:10px 10px;
+	float:left;
+}
+.small_sec .content p{
+	width:100%;
+	padding-bottom:5px;
+	float:left;
+}
+.small_sec .headng{
+	float:left;
+	width:322px;
+	height:22px;
+	padding:9px 10px 0px 10px;
+	background-image:url(../images/headng.gif);
+	background-repeat:repeat-x;
+}
+.small_sec .headng h6{
+	float:left;
+}
+.big_sec {
+	width:700px;
+}
+.big_sec .headng{
+	float:left;
+	width:700px;
+	border-bottom:#e2e2e2 solid 1px;
+	padding:5px 0px;
+	margin:20px 0px;
+}
+.big_sec .headng h6{
+	float:left;
+}
+/*
+=======================================================================
+	Static Page Rules
+=======================================================================
+*/
+.static {
+	float:left;
+	width:940px;
+}
+a.bordrs {
+	padding:3px;
+	border:#c9c9c9 solid 1px;
+	float:left;
+}
+.static h1{
+	float:left;
+	width:940px;
+	padding:10px 0px;
+	color:#666666;
+}
+.static h2{
+	float:left;
+	width:940px;
+	padding:8px 0px;
+	color:#666666;
+}
+.static h3{
+	float:left;
+	width:940px;
+	padding:6px 0px;
+	color:#666666;
+}
+.static h4{
+	float:left;
+	width:940px;
+	padding:5px 0px;
+	color:#666666;
+}
+.static h5{
+	float:left;
+	width:940px;
+	padding:5px 0px;
+	color:#666666;
+}
+.static h5 span{
+	padding-bottom:10px;
+}
+.static h6{
+	float:left;
+	width:940px;
+	padding:5px 0px;
+	color:#666666;
+}
+.static h5{
+	float:left;
+	width:940px;
+	padding:5px 0px;
+	line-height:24px;
+	color:#666666;
+}
+.static ul.imgs{
+	float:left;
+	list-style:none;
+	padding:5px 0px 10px 0px;
+}
+.static ul.imgs li{
+	float:left;
+	margin-right:10px;
+}
+.static .sec1 {
+	width:282px;
+	float:left;
+	margin-right:30px;
+	margin-top:20px;
+}
+.static .sec1 p{
+	width:282px;
+	float:left;
+	padding:0px 0px 10px 0px;
+}
+.static .sec1 a.bordrs{
+	margin-bottom:10px;
+}
+.static .sec2 {
+	width:282px;
+	float:left;
+	margin-right:30px;
+	margin-top:20px;
+}
+.static .sec2 p{
+	width:282px;
+	float:left;
+	padding:0px 0px 10px 0px;
+}
+.static .sec2 a.bordrs{
+	margin-bottom:10px;
+}
+.static .sec3 {
+	width:282px;
+	float:left;
+	margin-top:20px;
+}
+.static .sec3 p{
+	width:282px;
+	float:left;
+	padding:0px 0px 10px 0px;
+}
+.static .sec3 a.bordrs{
+	margin-bottom:10px;
+}
+.static ul.number{
+	width:100%;
+	float:left;
+	list-style:decimal;
+}
+.static ul.number li{
+	padding:4px 0px;
+	font-weight:bold;
+}
+.bigsec {
+	width:100%;
+	float:left;
+	padding:20px 0px;
+}
+.bigsec a.left{
+	margin:0px 20px 10px 0px;
+}
+.grayborder {
+	width:100%;
+	border-top:#e1e1e1 solid 1px;
+	margin:10px 0px;
+	height:1px;
+	overflow:hidden;
+}
+.static ol{
+	padding:20px 0px 20px 30px;
+}
+ul.radio {
+	list-style:none;
+	padding:15px 0px;
+	float:left;
+}
+ul.radio li{
+	padding:5px 0px;
+}
+ul.radio li input{
+	float:left;
+	margin-right:7px;
+}
+/*
+=======================================================================
+	small banner Rules
+=======================================================================
+*/
+.small_banner {
+	width:698px;
+	border:#d0d0d0 solid 1px;
+}
+/*
+=======================================================================
+	Categories Page Rules
+=======================================================================
+*/
+.categs {
+	width:938px;
+	border:#bababa solid 1px;
+}
+.catlist {
+	background-image:url(../images/cat_bg.gif);
+	background-repeat:repeat-x;
+	background-color:#f7f7f7;
+	width:938px;
+	border:#bababa solid 1px;
+	float:left;
+	margin-left:-1px;
+}
+.catlist .catsec{
+	background-image:url(../images/cat_sep.gif);
+	background-repeat:repeat-y;
+	background-position:right;
+	width:310px;
+	padding-right:3px;
+	min-height:219px;
+	float:left;
+}
+.catlist .last{
+	padding-right:1px !important;
+	background-image:none;
+}
+.catsec h3{
+	padding:30px 30px 10px 35px;
+	width:245px;
+}
+.catsec p{
+	padding:0px 30px 10px 35px;
+	width:245px;
+}
+.catsec img{
+	margin-right:17px;
+}
+.catsec ul{
+	list-style:none;
+	padding:20px 0px 10px 35px;
+	float:left;
+}
+.catsec ul li{
+	padding:3px 20px 3px 0px;
+	background-image:url(../images/arrows.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+.catsec ul li a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+
+.button				{ background: url(images/button-bg.png) repeat-x top center; border: 1px solid #999;
+					  -moz-border-radius: 5px; padding: 5px; color: black; font-weight: bold;
+					  -webkit-border-radius: 5px; font-size: 13px;  width: 70px; }
+.button:hover		{
+	color: black;
+	background-color: #999999;
+}
+#sst {
+	width: 200px;
+}

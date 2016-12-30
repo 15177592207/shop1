@@ -1,0 +1,66 @@
+
+#header_right { float: right; display: inline-block;	 padding-top: 20px; }
+
+#language { margin: 0; padding: 0; list-style: none }
+#language li { float: right; display: block; margin-left: 5px }
+
+#templatemo_search { clear: both; margin-top: 5px; width: 232px; height: 31px; background: url(../images/templatemo_searchbox.png) }
+#templatemo_search form {
+	margin: 0;
+	padding: 0;
+}
+
+#templatemo_search .txt_field {
+	float: left;
+	display: block;
+	height: 30px;
+	line-height: 20px;
+	width: 180px;
+	color: #999;
+	font-size: 12px;
+	padding: 0 5px;
+	font-variant: normal;
+	border: none;	
+	background: none;
+}
+
+#templatemo_search .sub_btn {
+	float: right;
+	display: block;
+ 	height: 34px;
+	width: 30px;
+	cursor: pointer;
+	border: none;
+	background: none;	
+}
+
+#templatemo_middle h1 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 40px;
+	margin-bottom: 15px;
+}
+
+#templatemo_middle p {
+	color: #ccc;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+#templatemo_middle img {
+	float: right;
+	margin-left: 60px;
+}
+
+#templatemo_middle a.buy_now {
+	display: inline-block;
+	padding: 8px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	background: #fff;
+	color: #21bdd0;
+}
+

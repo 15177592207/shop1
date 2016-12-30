@@ -1,0 +1,1 @@
+$('#categories').coinslider({ hoverPause: false });

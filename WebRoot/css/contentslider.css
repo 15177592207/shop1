@@ -1,0 +1,56 @@
+.sliderwrapper{
+position: relative; /*leave as is*/
+overflow: hidden; /*leave as is*/
+width: 938px; /*width of featured content slider*/
+height: 329px;
+border:#bababa solid 1px;
+}
+
+
+
+.sliderwrapper .contentdiv{
+visibility: hidden; /*leave as is*/
+position: absolute; /*leave as is*/
+left: 0;  /*leave as is*/
+top: 0;  /*leave as is*/
+width: 938px; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
+height: 329px;
+}
+
+.pagination{
+width: 193px; /*Width of pagination DIV. Total width should equal slider's outer width (400+10+10=420)*/
+height:247px;
+background-image:url(../images/banner_bg.png);
+background-repeat:no-repeat;
+float:right;
+padding:11px 0px 0px 11px;
+position:absolute;
+margin-top:40px;
+margin-left:700px;
+z-index:596;
+float:right;
+}
+
+.pagination a{
+	padding:15px 10px;
+	text-decoration: none; 
+	color: #000;
+	width:160px;
+	height:43px;
+	border:#fff solid 1px;
+	border-bottom:#bababa solid 1px;
+	display:inline-block;
+	margin-bottom:2px;
+}
+
+.pagination a:hover, .pagination a.selected{
+	padding:15px 10px;
+	text-decoration: none; 
+	color: #000;
+	background-image:url(../images/banner_rol.gif);
+	background-repeat:repeat-x;
+	width:160px;
+	height:43px;
+	border:#bababa solid 1px;
+	display:inline-block;
+	margin-bottom:2px;}
